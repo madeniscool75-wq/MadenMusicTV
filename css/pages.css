@@ -1578,6 +1578,123 @@
     font-weight: bold;
 }
 
+/* ========== PHOTO GALLERY PAGE ========== */
+.gallery-section {
+    padding: 80px 0;
+    background-color: var(--dark-bg-secondary);
+}
+
+.photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.photo-card {
+    position: relative;
+    width: 100%;
+    padding-bottom: 133%;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 3px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.photo-card:hover {
+    border-color: var(--primary-color);
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.4);
+}
+
+.photo-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.photo-card:hover img {
+    filter: brightness(0.6);
+}
+
+.photo-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 221, 119, 0.1));
+    color: var(--accent-text);
+    text-align: center;
+    padding: 20px;
+    font-size: 48px;
+}
+
+.photo-placeholder p:last-child {
+    font-size: 16px;
+    color: var(--light-text);
+    margin-top: 10px;
+}
+
+.photo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.photo-overlay p {
+    font-size: 18px;
+    color: var(--accent-text);
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.photo-card:hover .photo-overlay {
+    opacity: 1;
+}
+
+.gallery-cta {
+    text-align: center;
+    padding: 50px;
+    background-color: var(--dark-bg);
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+}
+
+.gallery-cta h2 {
+    font-size: 36px;
+    color: var(--accent-text);
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.4);
+}
+
+.gallery-cta p {
+    font-size: 16px;
+    color: var(--light-text);
+    margin-bottom: 25px;
+}
+
+.gallery-cta .btn {
+    display: inline-block;
+}
+
 /* ========== RESPONSIVE ADJUSTMENTS ========== */
 @media (max-width: 768px) {
     .page-header h1 {
