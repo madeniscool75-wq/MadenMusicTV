@@ -221,7 +221,7 @@ Works on all modern browsers:
 ## 📞 Contact Information
 
 **For MadenMusicTV:**
-- Email: contact@madenmusictvv.com
+- Email: madenmusictv@gmail.com
 - Discord: Join the community
 - Social Media: Follow on all platforms
 
