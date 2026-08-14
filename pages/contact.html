@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MadenMusicTV</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>🎵 MadenMusicTV</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="discord.html">Discord</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>Have questions or want to collaborate? I'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send a Message</h2>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required 
+                                placeholder="John Doe"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                placeholder="you@example.com"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject...</option>
+                                <option value="collaboration">Collaboration Inquiry</option>
+                                <option value="booking">Booking Request</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="support">Technical Support</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="+1 (555) 000-0000"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                required 
+                                placeholder="Tell me more about your inquiry..."
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input 
+                                type="checkbox" 
+                                id="newsletter" 
+                                name="newsletter"
+                            >
+                            <label for="newsletter">Subscribe to my newsletter for updates</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:contact@madenmusictvv.com">contact@madenmusictvv.com</a></p>
+                        <p class="info-desc">Response time: Usually within 24 hours</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">💬</div>
+                        <h3>Discord</h3>
+                        <p><a href="https://discord.gg/madenmusicvv" target="_blank">Join our Discord Server</a></p>
+                        <p class="info-desc">Chat with community & me in real-time</p>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">🐦</div>
+                        <h3>Social Media</h3>
+                        <p class="info-desc">Follow me on all platforms:</p>
+                        <div class="social-links-contact">
+                            <a href="https://twitter.com" target="_blank">Twitter</a>
+                            <a href="https://instagram.com" target="_blank">Instagram</a>
+                            <a href="https://twitch.tv" target="_blank">Twitch</a>
+                            <a href="https://youtube.com" target="_blank">YouTube</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">🎤</div>
+                        <h3>Collaboration Types</h3>
+                        <ul class="collab-types">
+                            <li>🎵 Music Features & Remixes</li>
+                            <li>🎮 Gaming Streams</li>
+                            <li>📹 Video Collaborations</li>
+                            <li>🤝 Brand Partnerships</li>
+                            <li>🎓 Tutorials & Workshops</li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="info-icon">⏰</div>
+                        <h3>Business Hours</h3>
+                        <p>Mon - Fri: 2:00 PM - 10:00 PM</p>
+                        <p>Sat - Sun: 1:00 PM - 11:00 PM</p>
+                        <p class="info-desc">Timezone: EST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>❓ What's the best way to contact you?</h3>
+                    <p>For quick inquiries, reach out via Discord or Twitter. For formal business requests, email is best as I can respond thoroughly.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>🤝 Do you accept collaboration requests?</h3>
+                    <p>Yes! I love collaborating with other creators. Use the form above with "Collaboration Inquiry" as the subject.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>📅 How can I book you for an event?</h3>
+                    <p>Select "Booking Request" in the contact form and provide details about your event, date, and requirements.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>💌 Can I get featured in your stream?</h3>
+                    <p>Absolutely! Reach out via email with your content and we can discuss collaboration opportunities.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>🎁 Do you offer discounts for bulk orders?</h3>
+                    <p>For large merchandise or music orders, please contact me directly to discuss pricing options.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>🚀 How do I stay updated on new content?</h3>
+                    <p>Subscribe to my newsletter via this form, follow my social media, or join the Discord community!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Response Guarantee -->
+    <section class="response-guarantee">
+        <div class="container">
+            <h2>I Promise to Respond</h2>
+            <p>Every message is important to me. I personally review all inquiries and guarantee a response within 48 hours.</p>
+            <div class="guarantee-badges">
+                <div class="badge">✓ Fast Response</div>
+                <div class="badge">✓ Personal Touch</div>
+                <div class="badge">✓ Professional Service</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MadenMusicTV</h4>
+                    <p>A passionate streamer and musician creating amazing content daily.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="music.html">Music</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Partnerships</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 MadenMusicTV. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
