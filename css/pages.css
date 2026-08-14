@@ -148,6 +148,16 @@
     transform: scale(1.05);
 }
 
+.play-btn-large:disabled {
+    background: linear-gradient(135deg, rgba(0, 255, 136, 0.3), rgba(0, 221, 119, 0.3));
+    color: rgba(224, 224, 224, 0.6);
+    cursor: not-allowed;
+}
+
+.play-btn-large:disabled:hover {
+    transform: none;
+}
+
 .download-btn {
     flex: 1;
     padding: 10px;
